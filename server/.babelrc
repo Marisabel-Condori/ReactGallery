@@ -6,3 +6,8 @@
         "@babel/plugin-transform-runtime"
     ]
 }
+
+// dependencias de produccion express
+// npm i express express-fileupload (subir archivo del frontend al backend y lo dejara listo para subir a la nube)
+// mongosse: modulo de coneccion a la base de datos mongo
+// dotenv: define variable si esta en produccion o desarrollo
