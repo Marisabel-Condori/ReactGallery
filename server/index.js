@@ -2,6 +2,7 @@ import express  from "express";
 import fileUpload from "express-fileupload";
 
 import indexRoutes from './routes/indexRoutes'
+import imagesRoutes from './routes/imagesRoutes'
 
 
 const app = express()
@@ -13,6 +14,7 @@ app.use(fileUpload({
     tempFileDir: '/temp'
 }))
 app.use(indexRoutes)
+app.use(imagesRoutes)
 
 app.listen(app.get('port'))
 console.log('Server on port: ', app.get('port'))
