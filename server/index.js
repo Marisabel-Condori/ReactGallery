@@ -4,8 +4,11 @@ import fileUpload from "express-fileupload";
 import indexRoutes from './routes/indexRoutes'
 import imagesRoutes from './routes/imagesRoutes'
 
+import config from './routes/config' 
+
 
 const app = express()
+ 
 
 //hacer correr en el local host 4000
 app.set('port', process.env.PORT || 4000);

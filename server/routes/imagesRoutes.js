@@ -3,7 +3,8 @@ import { Router } from "express";
 const router = Router()
 
 router.post('/api/images/upload', async (req, res) => {
-    console.log(req.files)
+    const {file} = req.files;
+    console.log(file)
 
     return res.json('recibido...')
 })
