@@ -1,6 +1,6 @@
 import express  from "express";
 import fileUpload from "express-fileupload";
-
+   
 import indexRoutes from './routes/indexRoutes'
 import imagesRoutes from './routes/imagesRoutes'
 
