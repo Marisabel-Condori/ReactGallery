@@ -4,7 +4,7 @@ import fileUpload from "express-fileupload";
 import indexRoutes from './routes/indexRoutes'
 import imagesRoutes from './routes/imagesRoutes'
 
-import config from './routes/config' 
+import './database'
 
 
 const app = express()
