@@ -7,6 +7,7 @@ import imagesRoutes from './routes/imagesRoutes'
 import './database'
 
 const app = express()
+//app.use(express.json()) tal vez esta sea la solucion
  
 
 //hacer correr en el local host 4000

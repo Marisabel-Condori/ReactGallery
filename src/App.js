@@ -12,12 +12,14 @@ function App() {
   return (
     // <Router> // ya lo estoy encerrando en BrouseRouter en el index
       <div className='bg-dark text-light'>
-        <Navbar/>
+       <Navbar/>
+       <div className='container p-4'>
         <Routes> 
-        <Route path='/upload' element={<ImageForm/>}/>
-        <Route path='/images/:id' element={<ImageDetail/>}/>
-        <Route path='/' element={<ImageGallery/>}/>
-      </Routes>
+          <Route path='/upload' element={<ImageForm/>}/>
+          <Route path='/images/:id' element={<ImageDetail/>}/>
+          <Route path='/' element={<ImageGallery/>}/>
+        </Routes>
+       </div>
       </div>
     // </Router>
   );
