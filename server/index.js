@@ -11,7 +11,11 @@ const app = express()
  
 
 //hacer correr en el local host 4000
-app.set('port', process.env.PORT || 4000);
+//app.set('port', process.env.PORT || 4000);
+app.listen(process.env.PORT || 4000, ()=>{
+    console.log('Server on port: ')
+
+});
 //app.get('/', (req, res) => res.send('hello world...'))
 app.use(fileUpload({
     tempFileDir: '/temp'
@@ -19,5 +23,5 @@ app.use(fileUpload({
 app.use(indexRoutes)     
 app.use(imagesRoutes)
 
-app.listen(app.get('port'))
-console.log('Server on port: ', app.get('port'))
+// app.listen(app.get('port'))
+// console.log('Server on port: ', app.get('port'))
